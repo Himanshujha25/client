@@ -71,9 +71,6 @@ const PruchoHero = () => {
                         {/* Left Column - Content */}
                         <div className={`space-y-8 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-                            {/* Badge */}
-
-
 
                             {/* Main Headline */}
                             <div className="space-y-2">
@@ -102,7 +99,7 @@ const PruchoHero = () => {
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="group bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-2xl">
-                                    <span className="flex items-center space-x-2">
+                                    <span className="flex items-center text-center space-x-2">
                                         <span>Enquiry</span>
                                         <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
@@ -154,8 +151,8 @@ const PruchoHero = () => {
                                             <div
                                                 key={index}
                                                 className={`p-4 rounded-xl transition-all duration-300 cursor-pointer ${currentStat === index
-                                                        ? 'bg-white/20 scale-105'
-                                                        : 'bg-white/5 hover:bg-white/10'
+                                                    ? 'bg-white/20 scale-105'
+                                                    : 'bg-white/5 hover:bg-white/10'
                                                     }`}
                                                 onClick={() => setCurrentStat(index)}
                                             >

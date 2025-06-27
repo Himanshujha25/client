@@ -15,8 +15,8 @@ const Navbar = () => {
        
         </div>
         <div className="hidden md:flex items-center space-x-8 text-white/80">
-          <a href="#features" className="hover:text-white transition-colors">Products</a>
-          <a href="#pricing" className="hover:text-white transition-colors">Contact</a>
+          <a href="#Products" className="hover:text-white transition-colors">Products</a>
+          <a href="#Contact" className="hover:text-white transition-colors">Contact</a>
           <a href="#about" className="hover:text-white transition-colors">About</a>
           <button className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition-all">
             Sign In
