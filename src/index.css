@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Define theme variables */
+@theme {
+  --color-primary: #3498db;
+  --color-secondary: #50e3c2;
+  --color-background: #f5f5f5;
+  --color-text: #333333;
+  --color-border: #e0e0e0;
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-4 py-2 rounded text-white bg-primary hover:bg-blue-600 transition;
+  }
+
+  .card {
+    @apply p-6 bg-white shadow-md rounded-lg border border-border;
+  }
+
+  .section {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold text-primary mb-6 text-center;
+  }
+
+ 
+ 
+}
+
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .shadow-hover {
+    @apply transition-shadow hover:shadow-lg;
+  }
+
+  .rounded-xl {
+    @apply rounded-xl;
+  }
+
+   .animate-fade-in-up {
+    @apply opacity-0 translate-y-4;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+
+
