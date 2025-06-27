@@ -99,7 +99,7 @@ const PruchoHero = () => {
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="group bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-2xl">
-                                    <span className="flex items-center text-center space-x-2">
+                                    <span className="flex justify-center items-center text-center space-x-2">
                                         <span>Enquiry</span>
                                         <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
